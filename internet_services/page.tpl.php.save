@@ -1,0 +1,29 @@
+<?php
+// $Id: page.tpl.php,v 1.12.2.10 2009/04/25 06:42:27 hswong3i Exp $
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
+
+<head profile="http://gmpg.org/xfn/11">
+  <title><?php print $head_title ?></title>
+  <?php print $head ?>
+  <?php print $styles ?>
+  <?php print $scripts ?>
+  <!--[if lt IE 7]>
+    <?php print phptemplate_get_ie_styles(); ?>
+  <![endif]-->
+  <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyle Content in IE */ ?> </script>
+</head>
+
+<body class="<?php print $body_classes ?>">
+<div id="header-region" class="clear-block"><?php print $header ?></div>
+<div id="wrapper"><!-- begin wrapper -->
+<div id="container" class="clear-block"><!-- begin container -->
+  <div id="header"><!-- begin header -->
+    <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page ?>" title="<?php print $site_name ?>"><img src="<?php print $logo ?>" alt="<?php print $site_name ?>" /></a></div><?php endif; ?>
+    <div id="slogan-floater"><!-- begin slogan-floater -->
+      <?php if ($site_name): ?><h1 class='site-name'><a href="<?php print $front_page ?>" title="<?php print $site_name ?>"><?php print $site_name ?></a></h1><?php endif; ?>
+      <?php if ($site_slogan): ?><div class='site-slogan'><?php print $site_slogan ?></div><?php endif; ?>
+    </div><!-- end slogan-floater -->
+  </div><!-- end header -->
+
+ <?php if (isset($primary_links)) : ?><!-- begin primary_links -->

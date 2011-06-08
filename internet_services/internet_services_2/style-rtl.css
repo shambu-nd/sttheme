@@ -1,0 +1,15 @@
+/* $Id: style-rtl.css,v 1.1.2.1 2009/04/22 02:27:36 hswong3i Exp $ */
+
+@import "../style-rtl.css";
+
+/**
+ * Page layout blocks / IDs
+ */
+#center .block h2 {
+  background: #E8E8E8 url('images/h2bg-rtl.gif') no-repeat center right;
+  padding: 0 43px 0 0;
+}
+.sidebar .block h2 {
+  background: #BDBDBD url('images/h3bg-rtl.gif') no-repeat center left;
+  padding: 0 5px 0 0;
+}

@@ -1,0 +1,16 @@
+; $Id: internet_services_2.info,v 1.1.2.3 2009/04/22 02:27:36 hswong3i Exp $
+name = Internet Services (2nd Edition)
+description = Tableless, multi-column, fluid width theme.
+version = VERSION
+core = 6.x
+engine = phptemplate
+base theme = internet_services
+stylesheets[all][] = style.css
+stylesheets[all][] = custom.css
+
+; Information added by drupal.org packaging script on 2009-12-17
+version = "6.x-2.10"
+core = "6.x"
+project = "internet_services"
+datestamp = "1261080964"
+
